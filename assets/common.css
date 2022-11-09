@@ -1,0 +1,69 @@
+/* PARKING LOT FOR FONT NAMES */
+/*
+   
+*/
+
+/*|| VARIABLES */ 
+
+/* FOR MOBILE */
+
+:root{
+    --body-copy:17px;
+    --body-copy-line-height: calc(var(--body-copy)*1.2);
+
+    --main-heading: 10vw;
+    --main-heading-line-height: calc(var(--main-heading));
+
+    --quote: calc(var(--body-copy)*1.5);
+    --quote-spacing: calc(var(--quote)*1.2);
+
+    --sub-heading: calc(var(--body-copy)*0.9);
+
+    --page-spacing:24px;
+
+    --background-color: #383838;
+    --accent-color: #6975e4d8;
+    --arrow-width: 6vw;
+
+    /* side bubbles */
+
+    /* SWITCH */
+    --reference: calc(var(--main-heading)*0.75);
+    --toggle-width: calc(var( --reference)*2.55);
+    --toggle-height: calc(var(--reference)*1);
+
+    --toggle-border-radius: calc(var(--reference)*0.5);
+
+    --toggle-switch: calc(var(--reference)*0.80);
+    --toggle-transformx: calc(var(--toggle-width) - var(--reference));
+    --toggle-padding: calc(var(--reference)*0.10);
+
+    --display: none;
+    --flex-direction: column;
+
+    --switch-position: 2vw;
+}
+
+/* || DESKTOP */
+
+@media (min-width:768px) {
+    :root {
+        --body-copy:16px;
+        --page-spacing:48px;
+
+        --main-heading: 9.1vw;
+        --sub-heading: calc(var(--body-copy)*2);
+
+        --quote: calc(var(--body-copy)*1.2);
+        
+        --background-color: #383838;
+
+        --article-width:30vw;
+        --section-width: 68.5vw;
+
+        --display: flex;
+        --flex-direction: row;
+
+        --switch-position: 28vw;
+    }
+}
